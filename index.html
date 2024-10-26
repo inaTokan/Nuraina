@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Nuraina</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+<body>
+    <!-- Navigasi Desktop -->
+    <nav id="desktop-nav">
+        <div class="logo">Nuraina</div>
+        <ul class="nav-links">
+            <li><a href="#tentang-saya">Tentang Saya</a></li>
+            <li><a href="#skill">Skill</a></li>
+            <li><a href="#my-project">My Project</a></li>
+            <li><a href="#kontak-saya">Kontak Saya</a></li>
+        </ul>
+    </nav>
+
+    <!-- Navigasi Hamburger -->
+    <nav id="hamburger-nav">
+        <div class="logo">Nuraina</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#tentang-saya" onclick="toggleMenu()">Tentang Saya</a></li>
+                <li><a href="#skill" onclick="toggleMenu()">Skill</a></li>
+                <li><a href="#my-project" onclick="toggleMenu()">My Project</a></li>
+                <li><a href="#kontak-saya" onclick="toggleMenu()">Kontak Saya</a></li>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Profil -->
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="ina.jpeg" alt="Foto profil Nuraina" />
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Halo, nama saya</p>
+            <h1 class="title">Nuraina</h1>
+            <p class="section__text__p2">Saya berasal dari Nusa Tenggara Timur</p>
+            <div class="btn-container">
+                <!-- Tombol-tombol bisa ditambahkan di sini jika diperlukan -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Tentang Saya -->
+    <section id="tentang-saya">
+        <h1 class="title">Tentang Saya</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="ayutokan.jpeg" alt="Foto Nuraina" class="tentang-pic" />
+            </div>
+            <div class="tentang-details-container">
+                <div class="text-container">
+                    <p>
+                        Saya adalah mahasiswa Teknik Informatika di Universitas Pamulang. Dalam pendidikan, saya bukanlah anak yang pintar,
+                        namun saya bermodalkan semangat dan kerajinan di kampus. Walaupun selama ini kurang berprestasi, saya akan terus
+                        berusaha demi kedua orang tua saya. Hobi saya bermain badminton dan game. Di waktu luang, saya senang menonton film atau drama Korea.
+                    </p>
+                    <p>
+                        Saya berasal dari pulau Nusa Tenggara Timur, desa Redontena, kecamatan Kelubagolit, kabupaten Flores Timur.
+                        Meskipun demikian, saya lahir di Malaysia dan tumbuh besar di sana.
+                    </p>
+                    <p>
+                        Hingga saat ini saya berada di tahap tengah perjalanan dan perjuangan saya di dunia perkuliahan yang jauh dari kedua orang tua saya.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <img src="arrow.png" alt="Ikon panah" class="icon arrow" onclick="location.href='#skill'" />
+    </section>
+
+    <!-- Skill Section -->
+    <section id="skill">
+        <h1 class="title">Skill</h1>
+        <div class="skill-details-container">
+            <div class="details-container">
+                <article>
+                    <img src="checkmark.png" alt="Ikon skill HTML" class="icon" />
+                    <div>
+                        <h3>HTML</h3>
+                        <p>Dasar</p>
+                    </div>
+                </article>
+                <article>
+                    <img src="checkmark.png" alt="Ikon skill CSS" class="icon" />
+                    <div>
+                        <h3>CSS</h3>
+                        <p>Dasar</p>
+                    </div>
+                </article>
+                <article>
+                    <img src="checkmark.png" alt="Ikon skill JavaScript" class="icon" />
+                    <div>
+                        <h3>JavaScript</h3>
+                        <p>Dasar</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Proyek Saya -->
+    <section id="my-project">
+        <p class="section__text__p1">Proyek Saya</p>
+        <h1 class="title">My Project</h1>
+        <div class="project-container">
+            <div class="project-item">
+                <img src="Project1.png" alt="Proyek 1" />
+                <a href="https://inatokan.github.io/Portfolio/" target="_blank" class="btn">Lihat Proyek</a>
+                <p>Dalam proyek Tugas 1 ini, saya telah menyelesaikan pembuatan portfolio pribadi yang bertujuan untuk menampilkan keterampilan, pengalaman, dan pencapaian saya dalam bidang Teknik Informatika.</p>
+            </div>
+            <div class="project-item">
+                <img src="Project2.png" alt="Proyek 2" />
+                <a href=" https://inatokan.github.io/from-login/" target="_blank" class="btn">Lihat Proyek</a>
+                <p>Dalam proyek Tugas 2 ini, saya telah menyelesaikan pembuatan form login yang bertujuan untuk memberikan pengalaman pengguna yang aman dan efisien dalam mengakses aplikasi.</p>
+            </div>
+            <div class="project-item">
+                <img src="Project3.png" alt="Proyek 3" />
+                <a href="https://inatokan.github.io/kalkulator//" target="_blank" class="btn">Lihat Proyek</a>
+                <p>Dalam proyek Tugas 3 ini, saya telah menyelesaikan pembuatan aplikasi kalkulator yang bertujuan untuk membantu pengguna dalam melakukan perhitungan matematika dasar dengan mudah dan cepat.</p>
+            </div>
+            <div class="project-item">
+                <img src="Project4.png" alt="Proyek 4" />
+                <a href="https://inatokan.github.io/website-personil/" target="_blank" class="btn">Lihat Proyek</a>
+                <p>Dalam proyek Tugas 4 ini, saya telah menyelesaikan pembuatan dashboard yang bertujuan untuk memberikan visualisasi data yang informatif dan interaktif.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galeri Foto -->
+    <section id="photo-gallery">
+        <p class="section__text__p1">Galeri Foto</p>
+        <h1 class="title">Photo Gallery Kegiatan</h1>
+        <div class="gallery-container">
+            <div class="gallery-item">
+                <img src="kegiatan1.jpg" alt="Kegiatan 1" />
+                <p></p>
+                <a href="https://www.sololearn.com/certificates/CC-HYQMFN8S" target="_blank">Lihat Detail</a>
+            </div>
+            <div class="gallery-item">
+                <img src="kegiatan2.jpg" alt="Kegiatan 2" />
+                <p></p>
+                <a href="https://www.sololearn.com/certificates/CC-PF1WUOZB" target="_blank">Lihat Detail</a>
+            </div>
+            <div class="gallery-item">
+                <img src="kegiatan3.jpg" alt="Kegiatan 3" />
+                <p></p>
+                <a href="https://www.sololearn.com/certificates/CC-ANLCIHMP" target="_blank">Lihat Detail</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kontak Saya -->
+    <section id="kontak-saya">
+        <p class="section__text__p1">Hubungi Saya</p>
+        <h1 class="title">Kontak Saya</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="email.png" alt="Ikon email" class="icon contact-icon email-icon" />
+                <p><a href="mailto:nurainirusdy4@gmail.com">nurainirusdy4@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="linkedin.png" alt="Ikon LinkedIn" class="icon contact-icon" />
+                <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#tentang-saya">Tentang Saya</a></li>
+                <li><a href="#skill">Skill</a></li>
+                <li><a href="#my-project">My Project</a></li>
+                <li><a href="#kontak-saya">Kontak
