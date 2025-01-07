@@ -1,82 +1,79 @@
  <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio Nuraina</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
-</head>
-<body>
-    <!-- Navigasi Desktop -->
+  </head>
+  <body>
     <nav id="desktop-nav">
-        <div class="logo">Nuraina</div>
-        <ul class="nav-links">
-            <li><a href="#tentang-saya">Tentang Saya</a></li>
-            <li><a href="#skill">Skill</a></li>
-            <li><a href="#my-project">My Project</a></li>
-            <li><a href="#kontak-saya">Kontak Saya</a></li>
-        </ul>
+      <div class="logo">Nuraina</div>
+      <ul class="nav-links">
+        <li><a href="#tentang-saya">Tentang Saya</a></li>
+        <li><a href="#skill">Skill</a></li>
+        <li><a href="#kontak-saya">Kontak Saya</a></li>
+      </ul>
     </nav>
 
-    <!-- Navigasi Hamburger -->
     <nav id="hamburger-nav">
-        <div class="logo">Nuraina</div>
-        <div class="hamburger-menu">
-            <div class="hamburger-icon" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <div class="menu-links">
-                <li><a href="#tentang-saya" onclick="toggleMenu()">Tentang Saya</a></li>
-                <li><a href="#skill" onclick="toggleMenu()">Skill</a></li>
-                <li><a href="#my-project" onclick="toggleMenu()">My Project</a></li>
-                <li><a href="#kontak-saya" onclick="toggleMenu()">Kontak Saya</a></li>
-            </div>
+      <div class="logo">Nuraina</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
+        <div class="menu-links">
+          <li><a href="#tentang-saya" onclick="toggleMenu()">Tentang Saya</a></li>
+          <li><a href="#skill" onclick="toggleMenu()">Skill</a></li>
+          <li><a href="#kontak-saya" onclick="toggleMenu()">Kontak Saya</a></li>
+        </div>
+      </div>
     </nav>
 
-    <!-- Profil -->
     <section id="profile">
-        <div class="section__pic-container">
-            <img src="ina.jpeg" alt="Foto profil Nuraina" />
+      <div class="section__pic-container">
+        <img src="./assets/ina.jpeg" alt="Foto profil Nuraina" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Halo, nama saya</p>
+        <h1 class="title">Nuraina</h1>
+        <p class="section__text__p2">Saya berasal dari Nusa Tenggara Timur</p>
+        <div class="btn-container">
+          <!-- Tombol-tombol bisa ditambahkan di sini jika diperlukan -->
         </div>
-        <div class="section__text">
-            <p class="section__text__p1">Halo, nama saya</p>
-            <h1 class="title">Nuraina</h1>
-            <p class="section__text__p2">Saya berasal dari Nusa Tenggara Timur</p>
-            <div class="btn-container">
-                <!-- Tombol-tombol bisa ditambahkan di sini jika diperlukan -->
-            </div>
-        </div>
+      </div>
     </section>
 
-    <!-- Tentang Saya -->
     <section id="tentang-saya">
-        <h1 class="title">Tentang Saya</h1>
-        <div class="section-container">
-            <div class="section__pic-container">
-                <img src="ayutokan.jpeg" alt="Foto Nuraina" class="tentang-pic" />
-            </div>
-            <div class="tentang-details-container">
-                <div class="text-container">
-                    <p>
-                        Saya adalah mahasiswa Teknik Informatika di Universitas Pamulang. Dalam pendidikan, saya bukanlah anak yang pintar,
-                        namun saya bermodalkan semangat dan kerajinan di kampus. Walaupun selama ini kurang berprestasi, saya akan terus
-                        berusaha demi kedua orang tua saya. Hobi saya bermain badminton dan game. Di waktu luang, saya senang menonton film atau drama Korea.
-                 
-                        Saya berasal dari pulau Nusa Tenggara Timur, desa Redontena, kecamatan Kelubagolit, kabupaten Flores Timur.
-                        Meskipun demikian, saya lahir di Malaysia dan tumbuh besar di sana.
-                   
-                        Hingga saat ini saya berada di tahap tengah perjalanan dan perjuangan saya di dunia perkuliahan yang jauh dari kedua orang tua saya.
-                    </p>
-                </div>
-            </div>
+      <h1 class="title">Tentang Saya</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img src="./assets/ayutokan.jpeg" alt="Foto Nuraina" class="tentang-pic" />
         </div>
+        <div class="tentang-details-container">
+          <div class="text-container">
+            <p>
+              Saya adalah mahasiswa Teknik Informatika di Universitas Pamulang. Dalam pendidikan, saya bukanlah anak yang pintar,
+              namun saya bermodalkan semangat dan kerajinan di kampus. Walaupun selama ini kurang berprestasi, saya akan terus 
+              berusaha demi kedua orang tua saya.Hobi saya bermain badminton dan game. Di waktu luang, saya senang menonton film atau drama Korea.
+            </p>
+            <p>
+              Saya berasal dari pulau Nusa Tenggara Timur, desa Redontena, kecamatan Kelubagolit, kabupaten Flores Timur.
+              Meskipun demikian, saya lahir di Malaysia dan tumbuh besar di sana.
+            </p>
+            <p>
+              Hingga saat ini saya berada di tahap tengah perjalanan dan perjuangan saya di dunia perkuliahan yang jauh dari kedua orang tua saya.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img src="./assets/arrow.png" alt="Ikon panah" class="icon arrow" onclick="location.href='./#skill'" />
     </section>
-
+   
     <!-- Skill Section -->
     <section id="skill">
         <h1 class="title">Skill</h1>
