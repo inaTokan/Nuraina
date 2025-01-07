@@ -1,3 +1,56 @@
+/* Responsive Design */
+
+/* Untuk layar kecil (maksimal 768px) */
+@media (max-width: 768px) {
+    #desktop-nav {
+        display: none;
+    }
+
+    #hamburger-nav {
+        display: flex;
+    }
+
+    #hamburger-nav .menu-links {
+        display: none;
+        flex-direction: column;
+        background: #2c3e50;
+        position: absolute;
+        top: 60px;
+        right: 10px;
+        border-radius: 5px;
+        padding: 1rem;
+    }
+
+    #hamburger-nav .menu-links.active {
+        display: flex;
+    }
+
+    section {
+        padding: 4rem 1rem;
+    }
+
+    #profile {
+        flex-direction: column;
+    }
+
+    .project-container,
+    .gallery-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Untuk layar sangat kecil (maksimal 480px) */
+@media (max-width: 480px) {
+    h1.title {
+        font-size: 2rem;
+    }
+
+    .project-item .btn {
+        padding: 0.5rem;
+        font-size: 0.875rem;
+    }
+}
+
 /* Global Styles */
 body {
     margin: 0;
