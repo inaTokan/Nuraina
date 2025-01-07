@@ -1,18 +1,14 @@
-/* Media Queries */
-@media (max-width: 768px) {
-    nav .nav-links {
+@media only screen and (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+    #desktop-nav {
         display: none;
     }
-
-    #hamburger-nav .hamburger-menu {
-        display: flex;
+    #hamburger-nav {
+        display: block;
     }
-
-    .section-container {
-        flex-direction: column;
-    }
-
-    .project-item img {
-        height: 150px;
+    .gallery-container {
+        grid-template-columns: repeat(2, 1fr); /* Mengubah jumlah kolom */
     }
 }
